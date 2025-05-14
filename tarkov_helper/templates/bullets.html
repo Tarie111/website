@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица патронов 5.45x39 - Escape from Tarkov</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #ff8c00;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .ammo-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background-color: #2a2a2a;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .ammo-table th {
+            background-color: #333;
+            color: #ff8c00;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+        
+        .ammo-table td {
+            padding: 10px;
+            border-bottom: 1px solid #444;
+            text-align: center;
+        }
+        
+        .ammo-table tr:nth-child(even) {
+            background-color: #252525;
+        }
+        
+        .ammo-table tr:hover {
+            background-color: #3a3a3a;
+        }
+        
+        .best-ammo {
+            background-color: #2d4a2d !important;
+        }
+        
+        .good-ammo {
+            background-color: #3d3d2a !important;
+        }
+        
+        .damage {
+            color: #ff6666;
+            font-weight: bold;
+        }
+        
+        .penetration {
+            color: #66b3ff;
+            font-weight: bold;
+        }
+        
+        .velocity {
+            color: #a5d6a7;
+        }
+        
+        .class-header {
+            background-color: #444 !important;
+            color: #fff !important;
+            font-weight: bold;
+            text-align: left !important;
+        }
+        
+        .class-1 { background-color: #333333; }
+        .class-2 { background-color: #3a3a3a; }
+        .class-3 { background-color: #424242; }
+        .class-4 { background-color: #4a4a4a; }
+        .class-5 { background-color: #525252; }
+        .class-6 { background-color: #5a5a5a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Патроны 7.62x54 мм</h1>
+        
+        <table class="ammo-table">
+            <thead>
+                <tr>
+                    <th>Патрон</th>
+                    <th>Урон</th>
+                    <th>Пробитие</th>
+                    <th>Скорость</th>
+                    <th>Класс 1</th>
+                    <th>Класс 2</th>
+                    <th>Класс 3</th>
+                    <th>Класс 4</th>
+                    <th>Класс 5</th>
+                    <th>Класс 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- БС -->
+                <tr class="best-ammo">
+                    <td>БС</td>
+                    <td class="damage">72</td>
+                    <td class="penetration">70</td>
+                    <td class="velocity">785 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                </tr>
+
+                
+                <!-- СНБ -->
+                <tr class="good-ammo">
+                    <td>СНБ</td>
+                    <td class="damage">75</td>
+                    <td class="penetration">62</td>
+                    <td class="velocity">875 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                </tr>
+
+                
+                <!-- БТ -->
+                <tr>
+                    <td>БТ</td>
+                    <td class="damage">78</td>
+                    <td class="penetration">55</td>
+                    <td class="velocity">875 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-3">3</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                <!-- ПС -->
+                <tr>
+                    <td>ПС</td>
+                    <td class="damage">84</td>
+                    <td class="penetration">45</td>
+                    <td class="velocity">875 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- ЛПС -->
+                <tr>
+                    <td>ЛПС</td>
+                    <td class="damage">81</td>
+                    <td class="penetration">42</td>
+                    <td class="velocity">865 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- Т-46М -->
+                <tr>
+                    <td>Т-46М</td>
+                    <td class="damage">82</td>
+                    <td class="penetration">41</td>
+                    <td class="velocity">800 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-2">2</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- FMJ -->
+                <tr>
+                    <td>FMJ</td>
+                    <td class="damage">84</td>
+                    <td class="penetration">33</td>
+                    <td class="velocity">760 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-4">4</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- SP BT -->
+                <tr>
+                    <td>SP BT</td>
+                    <td class="damage">92</td>
+                    <td class="penetration">27</td>
+                    <td class="velocity">703 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-2">2</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- HP BT -->
+                <tr>
+                    <td>HP BT</td>
+                    <td class="damage">102</td>
+                    <td class="penetration">23</td>
+                    <td class="velocity">807 м/с</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Таблица для 5.56x45 мм -->
+<h1>Патроны 5.56x45 мм</h1>
+
+<table class="ammo-table">
+    <thead>
+        <tr>
+            <th>Патрон</th>
+            <th>Урон</th>
+            <th>Пробитие</th>
+            <th>Скорость</th>
+            <th>Класс 1</th>
+            <th>Класс 2</th>
+            <th>Класс 3</th>
+            <th>Класс 4</th>
+            <th>Класс 5</th>
+            <th>Класс 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- SSA AP -->
+        <tr class="best-ammo">
+            <td>SSA AP</td>
+            <td class="damage">38</td>
+            <td class="penetration">57</td>
+            <td class="velocity">1013 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+        </tr>
+
+        <!-- M995 -->
+
+        <tr class="best-ammo">
+            <td>M995</td>
+            <td class="damage">42</td>
+            <td class="penetration">53</td>
+            <td class="velocity">1013 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+        </tr>
+        
+        <!-- M855A1 -->
+        <tr class="good-ammo">
+            <td>M855A1</td>
+            <td class="damage">49</td>
+            <td class="penetration">44</td>
+            <td class="velocity">945 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- M856A1 -->
+        <tr>
+            <td>M856A1</td>
+            <td class="damage">52</td>
+            <td class="penetration">38</td>
+            <td class="velocity">940 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- SOST / MK 318 Mod 0 -->
+        <tr>
+            <td>MK 318 Mod 0 (SOST)</td>
+            <td class="damage">53</td>
+            <td class="penetration">33</td>
+            <td class="velocity">902 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- M855 -->
+        <tr>
+            <td>M855</td>
+            <td class="damage">54</td>
+            <td class="penetration">31</td>
+            <td class="velocity">922 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- FMJ -->
+        <tr>
+            <td>FMJ</td>
+            <td class="damage">57</td>
+            <td class="penetration">23</td>
+            <td class="velocity">957 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- M856 -->
+        <tr>
+            <td>M856</td>
+            <td class="damage">60</td>
+            <td class="penetration">18</td>
+            <td class="velocity">874 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- RRLP / MK 255 Mod 0 -->
+
+        <tr>
+            <td>MK 255 Mod 0 (RRLP)</td>
+            <td class="damage">72</td>
+            <td class="penetration">11</td>
+            <td class="velocity">936 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- HP -->
+        <tr>
+            <td>HP</td>
+            <td class="damage">79</td>
+            <td class="penetration">7</td>
+            <td class="velocity">947 м/с</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- Warmage -->
+
+        <tr>
+            <td>Warmageddon</td>
+            <td class="damage">88</td>
+            <td class="penetration">3</td>
+            <td class="velocity">936 м/с</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+    </tbody>
+</table>
+    <!-- Таблица для 12x70 мм -->
+<h1>Патроны 12x70 мм</h1>
+
+<table class="ammo-table">
+    <thead>
+        <tr>
+            <th>Патрон</th>
+            <th>Урон</th>
+            <th>Пробитие</th>
+            <th>Скорость</th>
+            <th>Класс 1</th>
+            <th>Класс 2</th>
+            <th>Класс 3</th>
+            <th>Класс 4</th>
+            <th>Класс 5</th>
+            <th>Класс 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- AP-20 -->
+        <tr class="best-ammo">
+            <td>AP-20</td>
+            <td class="damage">164</td>
+            <td class="penetration">37</td>
+            <td class="velocity">510 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Флешетта -->
+        <tr class="good-ammo">
+            <td>Флешетта</td>
+            <td class="damage">25</td>
+            <td class="penetration">31</td>
+            <td class="velocity">320 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- .50 BMG -->
+        <tr>
+            <td>.50 BMG</td>
+            <td class="damage">197</td>
+            <td class="penetration">26</td>
+            <td class="velocity">410 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Пиранья -->
+        <tr>
+            <td>Пиранья</td>
+            <td class="damage">25</td>
+            <td class="penetration">24</td>
+            <td class="velocity">310 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- Полева-6у -->
+        <tr>
+            <td>Полева-6у</td>
+            <td class="damage">150</td>
+            <td class="penetration">20</td>
+            <td class="velocity">430 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- FTX -->
+        <tr>
+            <td>FTX</td>
+            <td class="damage">183</td>
+            <td class="penetration">20</td>
+            <td class="velocity">480 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Полева-3 -->
+        <tr>
+            <td>Полева-3</td>
+            <td class="damage">140</td>
+            <td class="penetration">17</td>
+            <td class="velocity">410 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- DualSabot -->
+        <tr>
+            <td>DualSabot</td>
+            <td class="damage">85</td>
+            <td class="penetration">17</td>
+            <td class="velocity">415 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Пуля -->
+
+        <tr>
+            <td>Свинцовая калиберная пуля</td>
+            <td class="damage">167</td>
+            <td class="penetration">15</td>
+            <td class="velocity">370 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- CSP -->
+        <tr>
+            <td>CSP</td>
+            <td class="damage">206</td>
+            <td class="penetration">14</td>
+            <td class="velocity">442 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Гризли 40 -->
+        <tr>
+            <td>Гризли 40</td>
+            <td class="damage">190</td>
+            <td class="penetration">12</td>
+            <td class="velocity">390 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- SFormance -->
+        <tr>
+            <td>SFormance</td>
+            <td class="damage">220</td>
+            <td class="penetration">5</td>
+            <td class="velocity">594 м/с</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- 7мм -->
+        <tr>
+            <td>7мм</td>
+            <td class="damage">39</td>
+            <td class="penetration">3</td>
+            <td class="velocity">415 м/с</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Экспресс -->
+        <tr>
+            <td>6.5мм картечь "Экспресс"</td>
+            <td class="damage">35</td>
+            <td class="penetration">3</td>
+            <td class="velocity">430 м/с</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- Магнум -->
+        <tr>
+            <td>8.5мм картечь "Магнум"</td>
+            <td class="damage">50</td>
+            <td class="penetration">2</td>
+            <td class="velocity">385 м/с</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- RIP -->
+        <tr>
+            <td>RIP</td>
+            <td class="damage">265</td>
+            <td class="penetration">2</td>
+            <td class="velocity">410 м/с</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- 5.25мм -->
+        <tr>
+            <td>5.25мм картечь</td>
+            <td class="damage">37</td>
+            <td class="penetration">1</td>
+            <td class="velocity">330 м/с</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+    </tbody>
+</table>
+    <!-- Таблица для 7.62x39 мм -->
+<h1>Патроны 7.62x39 мм</h1>
+
+<table class="ammo-table">
+    <thead>
+        <tr>
+            <th>Патрон</th>
+            <th>Урон</th>
+            <th>Пробитие</th>
+            <th>Скорость</th>
+            <th>Класс 1</th>
+            <th>Класс 2</th>
+            <th>Класс 3</th>
+            <th>Класс 4</th>
+            <th>Класс 5</th>
+            <th>Класс 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- MAI AP -->
+        <tr class="best-ammo">
+            <td>MAI AP</td>
+            <td class="damage">53</td>
+            <td class="penetration">58</td>
+            <td class="velocity">875 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+        </tr>
+
+        
+        <!-- БП -->
+        <tr class="good-ammo">
+            <td>БП</td>
+            <td class="damage">58</td>
+            <td class="penetration">47</td>
+            <td class="velocity">730 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- ПП -->
+        <tr>
+            <td>ПП</td>
+            <td class="damage">59</td>
+            <td class="penetration">41</td>
+            <td class="velocity">732 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- ПС -->
+        <tr>
+            <td>ПС</td>
+            <td class="damage">61</td>
+            <td class="penetration">35</td>
+            <td class="velocity">717 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- Т-45М1 -->
+        <tr>
+            <td>Т-45М1</td>
+            <td class="damage">65</td>
+            <td class="penetration">30</td>
+            <td class="velocity">720 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- УС -->
+        <tr>
+            <td>УС</td>
+            <td class="damage">56</td>
+            <td class="penetration">29</td>
+            <td class="velocity">301 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- FMJ -->
+        <tr>
+            <td>FMJ</td>
+            <td class="damage">63</td>
+            <td class="penetration">26</td>
+            <td class="velocity">775 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- SP -->
+        <tr>
+            <td>SP</td>
+            <td class="damage">68</td>
+            <td class="penetration">20</td>
+            <td class="velocity">772 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- HP -->
+        <tr>
+            <td>HP</td>
+            <td class="damage">80</td>
+            <td class="penetration">15</td>
+            <td class="velocity">754 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+    </tbody>
+</table>
+    <div class="container">
+        <h1>Патроны 9x19mm</h1>
+        
+        <table class="ammo-table">
+            <thead>
+                <tr>
+                    <th>Ammo Type</th>
+                    <th>Damage</th>
+                    <th>Penetration</th>
+                    <th>Velocity</th>
+                    <th>Class 1</th>
+                    <th>Class 2</th>
+                    <th>Class 3</th>
+                    <th>Class 4</th>
+                    <th>Class 5</th>
+                    <th>Class 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- PBP -->
+                <tr class="best-ammo">
+                    <td>PBP</td>
+                    <td class="damage">44</td>
+                    <td class="penetration">39</td>
+                    <td class="velocity">560 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-4">4</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- AP 6.3 -->
+                <tr class="good-ammo">
+                    <td>AP 6.3</td>
+                    <td class="damage">52</td>
+                    <td class="penetration">30</td>
+                    <td class="velocity">392 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- PST -->
+                <tr>
+                    <td>PST</td>
+                    <td class="damage">54</td>
+                    <td class="penetration">20</td>
+                    <td class="velocity">457 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- M882 -->
+                <tr>
+                    <td>M882</td>
+                    <td class="damage">56</td>
+                    <td class="penetration">18</td>
+                    <td class="velocity">385 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-4">4</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- GT -->
+                <tr>
+                    <td>Green Tracer</td>
+                    <td class="damage">58</td>
+                    <td class="penetration">14</td>
+                    <td class="velocity">365 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-2">2</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- PSO -->
+                <tr>
+                    <td>PSO</td>
+                    <td class="damage">59</td>
+                    <td class="penetration">10</td>
+                    <td class="velocity">340 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+
+                
+                <!-- Luger CCI -->
+                <tr>
+                    <td>Luger CCI</td>
+                    <td class="damage">70</td>
+                    <td class="penetration">10</td>
+                    <td class="velocity">420 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- QuakeMaker -->
+                <tr>
+                    <td>QuakeMaker</td>
+                    <td class="damage">85</td>
+                    <td class="penetration">8</td>
+                    <td class="velocity">290 m/s</td>
+                    <td class="class-4">4</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- RIP -->
+                <tr>
+                    <td>RIP</td>
+                    <td class="damage">102</td>
+                    <td class="penetration">2</td>
+                    <td class="velocity">381 m/s</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<!-- Таблица для 5.45x39 мм -->
+<h1>Патроны 5.45x39 мм</h1>
+
+<table class="ammo-table">
+    <thead>
+        <tr>
+            <th>Патрон</th>
+            <th>Урон</th>
+            <th>Пробитие</th>
+            <th>Скорость</th>
+            <th>Класс 1</th>
+            <th>Класс 2</th>
+            <th>Класс 3</th>
+            <th>Класс 4</th>
+            <th>Класс 5</th>
+            <th>Класс 6</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- ППБС -->
+        <tr class="best-ammo">
+            <td>ППБС</td>
+            <td class="damage">37</td>
+            <td class="penetration">62</td>
+            <td class="velocity">905 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+        </tr>
+
+        
+        <!-- БС -->
+        <tr class="good-ammo">
+            <td>БС</td>
+            <td class="damage">45</td>
+            <td class="penetration">54</td>
+            <td class="velocity">830 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+        </tr>
+
+        
+        <!-- БП -->
+        <tr>
+            <td>БП</td>
+            <td class="damage">48</td>
+            <td class="penetration">45</td>
+            <td class="velocity">890 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- 7Н40 -->
+        <tr>
+            <td>7Н40</td>
+            <td class="damage">55</td>
+            <td class="penetration">42</td>
+            <td class="velocity">915 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- БT -->
+        <tr>
+            <td>БT</td>
+            <td class="damage">54</td>
+            <td class="penetration">37</td>
+            <td class="velocity">880 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        <!-- ПП -->
+        <tr>
+            <td>ПП</td>
+            <td class="damage">51</td>
+            <td class="penetration">34</td>
+            <td class="velocity">886 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- ПС -->
+        <tr>
+            <td>ПС</td>
+            <td class="damage">56</td>
+            <td class="penetration">28</td>
+            <td class="velocity">890 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- FMJ -->
+        <tr>
+            <td>FMJ</td>
+            <td class="damage">55</td>
+            <td class="penetration">24</td>
+            <td class="velocity">884 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- Т -->
+        <tr>
+            <td>Т</td>
+            <td class="damage">59</td>
+            <td class="penetration">20</td>
+            <td class="velocity">883 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-5">5</td>
+            <td class="class-1">1</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- УС -->
+        <tr>
+            <td>УС</td>
+            <td class="damage">65</td>
+            <td class="penetration">17</td>
+            <td class="velocity">303 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- SP -->
+        <tr>
+            <td>SP</td>
+            <td class="damage">67</td>
+            <td class="penetration">15</td>
+            <td class="velocity">873 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-3">3</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+        
+        <!-- ПРС -->
+        <tr>
+            <td>ПРС</td>
+            <td class="damage">70</td>
+            <td class="penetration">13</td>
+            <td class="velocity">866 м/с</td>
+            <td class="class-5">5</td>
+            <td class="class-2">2</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+
+        
+        <!-- HP -->
+        <tr>
+            <td>HP</td>
+            <td class="damage">76</td>
+            <td class="penetration">9</td>
+            <td class="velocity">884 м/с</td>
+            <td class="class-4">4</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+            <td class="class-0">0</td>
+        </tr>
+    </tbody>
+</table>
+        <div class="container">
+        <h1> Патроны 4.6x30mm </h1>
+        
+        <table class="ammo-table">
+            <thead>
+                <tr>
+                    <th>Ammo Type</th>
+                    <th>Damage</th>
+                    <th>Penetration</th>
+                    <th>Velocity</th>
+                    <th>Class 1</th>
+                    <th>Class 2</th>
+                    <th>Class 3</th>
+                    <th>Class 4</th>
+                    <th>Class 5</th>
+                    <th>Class 6</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- AP SX -->
+                <tr class="best-ammo">
+                    <td>AP SX</td>
+                    <td class="damage">35</td>
+                    <td class="penetration">53</td>
+                    <td class="velocity">680 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-2">2</td>
+                </tr>
+                
+                <!-- FMJ SX -->
+                <tr class="good-ammo">
+                    <td>FMJ SX</td>
+                    <td class="damage">43</td>
+                    <td class="penetration">40</td>
+                    <td class="velocity">620 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- JSP SX -->
+                <tr>
+                    <td>JSP SX</td>
+                    <td class="damage">46</td>
+                    <td class="penetration">32</td>
+                    <td class="velocity">579 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-1">1</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- Subsonic SX -->
+                <tr>
+                    <td>Subsonic SX</td>
+                    <td class="damage">52</td>
+                    <td class="penetration">23</td>
+                    <td class="velocity">290 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-5">5</td>
+                    <td class="class-2">2</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+                
+                <!-- Action SX -->
+                <tr>
+                    <td>Action SX</td>
+                    <td class="damage">65</td>
+                    <td class="penetration">18</td>
+                    <td class="velocity">690 m/s</td>
+                    <td class="class-5">5</td>
+                    <td class="class-4">4</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                    <td class="class-0">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

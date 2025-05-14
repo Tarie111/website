@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarkov Helper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            position: relative;
+        }
+        .auth-info {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            color: white;
+            font-size: 0.9rem;
+        }
+        .auth-info a {
+            color: #d9a441;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0 0 4px 4px;
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown-menu li {
+            padding: 0;
+            margin: 0;
+        }
+        .dropdown-menu a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .dropdown-menu a:hover {
+            background-color: #d9a441;
+            color: #000;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #1a1a1a;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+            color: #1a1a1a;
+        }
+        .flash-messages {
+            margin: 10px 0;
+        }
+        .flash-message {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+        }
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tarkov Helper</h1>
+        <p>Помощник для Escape from Tarkov</p>
+
+        <div class="auth-info">
+            {% if current_user.is_authenticated %}
+                Привет, {{ current_user.username }}! | <a href="{{ url_for('logout') }}">Выйти</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Войти</a> | <a href="{{ url_for('register') }}">Регистрация</a>
+            {% endif %}
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="dropdown">
+                <a href="#">Карты</a>
+                <ul class="dropdown-menu">
+                    <li><a href="{{ url_for('epicentr') }}">Эпицентр</a></li>
+                    <li><a href="{{ url_for('laboratoriya') }}">Лаборатория</a></li>
+                    <li><a href="{{ url_for('les') }}">Лес</a></li>
+                    <li><a href="{{ url_for('mayak') }}">Маяк</a></li>
+                    <li><a href="{{ url_for('razvyazka') }}">Развязка</a></li>
+                    <li><a href="{{ url_for('rezerv') }}">Резерв</a></li>
+                    <li><a href="{{ url_for('bereg') }}">Берег</a></li>
+                    <li><a href="{{ url_for('tamozhnya') }}">Таможня</a></li>
+                    <li><a href="{{ url_for('ulicy') }}">Улицы</a></li>
+                    <li><a href="{{ url_for('zavod') }}">Завод</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Предметы</a></li>
+            <li><a href="#">Квесты</a></li>
+            <li><a href="{{ url_for('bullets') }}">Таблицы патронов</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="flash-messages">
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        <div class="flash-message {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+        </div>
+
+        {% if current_user.is_authenticated %}
+            <div class="welcome-message">
+                Добро пожаловать в Tarkov Helper, {{ current_user.username }}!
+            </div>
+        {% else %}
+            <div class="welcome-message">
+                Добро пожаловать в Tarkov Helper! Пожалуйста, <a href="{{ url_for('login') }}">войдите</a> или <a href="{{ url_for('register') }}">зарегистрируйтесь</a> для доступа ко всем функциям.
+            </div>
+        {% endif %}
+
+        <h1 style="text-align: center;">Торговцы Escape from Tarkov</h1>
+        <table>
+            <tr>
+                <th>Торговец</th>
+                <th>Изображение</th>
+                <th>Описание</th>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Prapor" target="_blank">Прапор</a></td>
+                <td><img src="static/images/PraporFullRes.jpg" alt="Прапор" width="200"></td>
+                <td>Поставщик оружия и боеприпасов</td>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Therapist" target="_blank">Терапевт</a></td>
+                <td><img src="static/images/TherapistFullRes.jpg" alt="Терапевт" width="200"></td>
+                <td>Торгует медикаментами</td>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Skier" target="_blank">Лыжник</a></td>
+                <td><img src="static/images/SkierFullRes.jpg" alt="Лыжник" width="200"></td>
+                <td>Продаёт снаряжение и одежду</td>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Peacekeeper" target="_blank">Миротворец</a></td>
+                <td><img src="static/images/PeacekeeperFullRes.jpg" alt="Миротворец" width="200"></td>
+                <td>Западный поставщик оружия</td>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Mechanic" target="_blank">Механик</a></td>
+                <td><img src="static/images/Sergey_Arsenyevich_Samoylov.jpg" alt="Механик" width="200"></td>
+                <td>Торгует модификациями оружия</td>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Ragman" target="_blank">Барахольщик</a></td>
+                <td><img src="static/images/Ragpickerbanner.jpg" alt="Барахольщик" width="200"></td>
+                <td>Продаёт броню и рюкзаки</td>
+            </tr>
+            <tr>
+                <td><a href="https://escapefromtarkov.fandom.com/wiki/Jaeger" target="_blank">Егерь</a></td>
+                <td><img src="static/images/Jaeger.jpg" alt="Егерь" width="200"></td>
+                <td>Охотничье снаряжение и редкие товары</td>
+            </tr>
+        </table>
+    </main>
+    
+    <footer>
+        <p>© 2025 Tarkov Helper. Неофициальный ресурс.</p>
+    </footer>
+</body>
+</html>
